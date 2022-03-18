@@ -4,50 +4,88 @@
       <title>My Homepage</title>
   </head>
     <body>
-      <h1 id="top">No Min Sung</h1>
-               <ul>
-                   <a href="#top"><li>Main</li></a>
-                   <a href="#second"><li>Programming Skills</li></a>
-                   <a href="#third"><li>Hobby</li></a>
-               </ul>
-      <br>
-      <img src="pro.jpg" width="200" height="150" alt="Profile image">
-      <p>CBNU 3rd Software student</p>
-      <hr>
-      <h2 id="second">Programming Skills</h2>
-      <table border="1">
-        <tr>
-          <th colspan="4">Skills</th>
-        </tr>
 
-        <tr>
-          <td>C++</td>
-          <td>Python</td>
-          <td>Java</td>
-          <td>Web</td>
-        </tr>
+      <div class="main"; style="border:1px black solid">
 
-        <tr>
-          <td>★★★</td>
-          <td>★★</td>
-          <td>★</td>
-          <td>★★</td>
-        </tr>
-      </table>
-      <hr>
-      <h2 id="third">Hobby</h2>
-      <ul>
-               <a href="sports.html" target="_self"><li>Sports</li></a>
-               <ol>
-                   <li>Baseball</li>
-                   <li>E-sports</li>
-               </ol>
-               <a href="music.html" target="_self"><li>Music</li></a>
-               <ol>
-                   <li>K-pop</li>
-                   <li>PoP Song</li>
-               </ol>
-      </ul>
-      <hr>
-    </body>
+        <h1 id="top">No Min Sung</h1>
+                <ul>
+                    <a href="#top"><li>Main</li></a>
+                    <a href="#second"><li>Programming Skills</li></a>
+                    <a href="#third"><li>Hobby</li></a>
+                    <a href="#four"><li>Music</li></a>
+                    <a href="#five"><li>Sign Up</li></a>
+                  </ul>
+                  <br>
+                  <img src="pro.jpg" width="200" height="150" alt="Profile image">
+                  <p>CBNU 3rd Software student</p>
+      </div>
+
+      <div class="skills";>
+        <h2 id="second">Programming Skills</h2>
+        <table border="1">
+          <tr>
+            <th colspan="4">Skills</th>
+          </tr>
+
+          <tr>
+            <td>C++</td>
+            <td>Python</td>
+            <td>Java</td>
+            <td>Web</td>
+          </tr>
+
+          <tr>
+            <td>★★★</td>
+            <td>★★</td>
+            <td>★</td>
+            <td>★★</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="hobby">
+        <h2 id="third">Hobby</h2>
+        <ul>
+                <a href="sports.html" target="_self"><li>Sports</li></a>
+                <ol>
+                    <li>Baseball</li>
+                    <li>E-sports</li>
+                  </ol>
+                  <a href="music.html" target="_self"><li>Music</li></a>
+                  <ol>
+                    <li>K-pop</li>
+                    <li>PoP Song</li>
+                  </ol>
+                </ul>
+                <hr>
+      </div>
+
+      <div class="music">
+        <h2 id="four">Music</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/r8OipmKFDeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="forms">
+        <h2 id="five">Sign Up</h2>
+        <form>
+          <label>Name:</label>
+          <input type="text" autofocus required><br>
+
+          <label>Password:</label>
+          <input type="password" required><br>
+
+          <label>Phone Number:</label>
+          <input type="tel" placeholder="010-0000-0000" required><br>
+
+          <label>Email:</label>
+          <input type="email" required placeholder="abc@naver.com" ><br>
+
+          <label>Age:</label>
+          <input type="number" required><br>
+
+          <input type="submit" value="signup">
+          <input type="reset" value="reset">
+        </form>
+      </div>
+
 </html>
