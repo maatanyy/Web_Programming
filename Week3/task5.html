@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          table {
+            background: url("leopardskin.jpg");
+            border-collapse: collapse;
+            width: 100%;
+          }
+
+          th, td {
+            text-align: center;
+            padding: 8px;
+          }
+
+          .odd {
+            background-color:purple;
+          }
+
+          .co {
+            color:white;
+          }
+
+          .even {
+            background-color: pink;
+          }
+
+          .albums {
+            text-align:right;
+          }
+
+          .number {
+            text-align:left;
+          }
+
+          caption {
+            caption-side:bottom;
+            text-align:right;
+
+          }
+        </style>
+    </head>
+
+    <body>
+      <table border="1">
+        <tr>
+          <th class="co">Band</th>
+          <th class="co">Year formed</th>
+          <th class="co">No. of Albums</th>
+          <th class="co">Most famous song</th>
+        </tr>
+
+        <tr class="odd">
+          <td>Yellow</td>
+          <td>1976</td>
+          <td>9</td>
+          <td>Ever fallen in love</td>
+        </tr>
+
+        <tr class="even">
+          <td>Green</td>
+          <td>1976</td>
+          <td>15</td>
+          <td>Ever fallen in love</td>
+        </tr>
+
+        <tr class="odd">
+          <td>Blue</td>
+          <td>1976</td>
+          <td>21</td>
+          <td>Ever fallen in love</td>
+        </tr>
+
+        <tr>
+          <th colspan="2" class="albums">Total albums</th>
+          <td colspan="2" class="number">77</td>
+        </tr>
+
+        <caption>A summary of the UK's most famous punk bands</caption>
+
+      </table>
+    </body>
+</html>
