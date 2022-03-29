@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>My Homepage</title>
+      <link type= "text/css" rel="stylesheet" href="mystyle.css">
+      <style>
+        body{
+          background-image: url('sky.jpg');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+        a:link{
+          color:red;
+        }
+        a:visited{
+          color:blue;
+        }
+        a:hover{
+          color:aquamarine;
+        }
+        a:active{
+          color:bisque;
+        }
+      </style>
+  </head>
+    <body>
+
+      <div class="main"; style="border:1px black solid">
+
+        <h1 id="top" style="font-weight:bold;">No Min Sung</h1>
+        <br>
+                    <p id="menu"><a href="#top">Main</a></p>
+                    <p id="menu"><a href="#second">Programming Skills</a></p>
+                    <p id="menu"><a href="#third">Hobby</a></p>
+                    <p id="menu"><a href="#four">Music</a></p>
+                    <p id="menu"><a href="#five">Sign Up</a></p>
+                  <br>
+                  <img src="pro.jpg" width="200" height="150" alt="Profile image">
+                  <p style="color:yellow">CBNU 3rd Software student</p>
+      </div>
+      <br>
+
+      <div class="skills";>
+        <h2 id="second" style="font-weight:bold;">Programming Skills</h2>
+        <table border="1">
+          <tr>
+            <th colspan="4">Skills</th>
+          </tr>
+
+          <tr>
+            <td>C++</td>
+            <td>Python</td>
+            <td>Java</td>
+            <td>Web</td>
+          </tr>
+
+          <tr>
+            <td>★★★</td>
+            <td>★★</td>
+            <td>★</td>
+            <td>★★</td>
+          </tr>
+        </table>
+      </div>
+
+      <br><br>
+
+      <div class="hobby">
+        <h2 id="third" style="font-weight:bold;">Hobby</h2>
+        <ul>
+                <a href="sports.html" target="_self"><li>Sports</li></a>
+                  <ol>
+                    <li>Baseball</li>
+                    <li>E-sports</li>
+                  </ol>
+                  <a href="music.html" target="_self"><li>Music</li></a>
+                  <ol>
+                    <li>K-pop</li>
+                    <li>PoP Song</li>
+                  </ol>
+        </ul>
+                <hr>
+      </div>
+
+      <div class="music">
+        <h2 id="four" style="font-weight:bold;">Music</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/r8OipmKFDeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="forms">
+        <h2 id="five" style="font-weight:bold;">Sign Up</h2>
+        <form>
+          <label style="font-style:italic;">Name:</label>
+          <input type="text" autofocus required class="formstyle"><br>
+
+          <label style="font-style:italic;">Password:</label>
+          <input type="password" required class="formstyle"><br>
+
+          <label style="font-style:italic;">Phone Number:</label>
+          <input type="tel" placeholder="010-0000-0000" required class="formstyle"><br>
+
+          <label style="font-style:italic;">Email:</label>
+          <input type="email" required placeholder="abc@naver.com" class="formstyle"><br>
+
+          <label style="font-style:italic;">Age:</label>
+          <input type="number" required class="formstyle"><br>
+          <br>
+          <input type="submit" value="signup" class="formbutton">
+          <input type="reset" value="reset" class="formbutton">
+        </form>
+        <br><br>
+      </div>
+
+</html>
