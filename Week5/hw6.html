@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #header{
+                background-color: #8CACB2;
+                width: 80%;
+                height: 120px;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+
+            #logo{
+                margin-left: 30px;
+                margin-top: 20px;
+                float: left;
+            }
+
+            #logo_text{
+                padding-top:40px;
+                padding-left: 250px;
+                font-size: 30px;
+                color: white;
+            }
+            
+            #logo_button{
+                position: relative;
+                left:70%;
+                top:-60px;
+                margin-left: 10px;
+                margin-right: 10px;
+                border-radius: 7px;
+                font-style: bold;
+            }
+
+            #logo_button:hover{
+                color:grey;
+                background-color: rgb(100, 99, 99);
+            }
+
+
+            #nav1{
+                font-weight: bold;
+                width: 80%;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-top: 20px;
+                text-align: center;
+                font-size: 15px;
+            }
+
+
+            #nav2{
+                text-align: center;
+                width: 50%;
+                margin-left: 5%;
+                background-color: white;
+                font-size: 15px;
+            }
+
+            #big_text{
+                font-weight: bold;
+                font-size: 20px;
+            }
+            
+            #small_text{
+                font-size: 14px;    
+            }
+
+            #body_hr{
+                border: 0px;
+                margin-left: 10%;
+                margin-right: 10%;
+                border-top: 3px dotted;
+            }
+            
+            #area{
+                margin-left: 10%;
+            }
+
+            #form_button{
+                position: relative;
+                top: 15px;
+                right: 220px;
+            }
+
+            #footer{
+                background-color: #8CACB2;
+                width: 80%;
+                margin-left: 10%;
+                margin-right: 10%;
+                text-align: right;
+                font-size: 15px;
+            }
+
+            #footer_text{
+                padding-right: 2%;
+            }
+
+            #footer_text2{
+                padding-right: 2%;
+                font-style: italic;
+            }
+
+            #ads{
+                position: fixed;
+                background-color: #8CACB2;
+                width: 300px;
+                height: 100px;
+                bottom: 250px;
+                right: 300px;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <img src="logo.png" width="200px" height="80px" id="logo">
+            <p id="logo_text">Premium bookshop</p>
+            <button id="logo_button">Home</button>
+            <button id="logo_button">Books</button>
+            <button id="logo_button">Gifts</button>
+        </div>
+        <div id="nav1">The best Bookstore Onlile<br>Over 6 million books ready for shipment within 24 hours and 4.5 million eBooks to download now.<br><br><hr></div>
+   
+        <div id="nav2">
+            <br>
+            <p id="big_text">The President Is Missing</p>
+            <p id="small_text">Please join us in welcoming President Bill Clinton and the world's bestselling author<br> James Patterson to celebrate the release 
+            of their new novel. The President is<br> Missing. A limited number of wristbands for event access will be distributed<br> beginning at 9am the day of the even</p>
+            <img src="clinton.jpg" width="250px" height="350px">
+            <br><br>
+            <hr id="body_hr">
+
+            <p id="big_text">True Roots: A Mindful Kitchen with More Than 100<br>
+            Recipes Free of Gluten, Dairy, and Refined Sugar</p>
+            <p id="small_text">In her first book, Kristin Cavallari shared her personal journey along with her tips on<br> 
+                everything from style to relationships. And now, with True Roots, Cavallari shows<br> you that improving the way
+                you eat doesn't have to be difficult--a clean and toxin-<br>free diet can and should be fun, easy, and enjoyable.
+                She learned the hard way that<br>dieting leads nowhere good, and that a clean lifestyle is the ticket to feeling and<br>
+                being healthy.
+            </p>
+            <img src="roots.jpg" width="250px" height="350px">
+            <br><br>
+            <hr id="body_hr">
+
+            <p id="big_text">Selling Boldly: Applying the New Science of Positive<br>
+                Psychology to Dramatically Increase Your Confidence,<br>Happiness, and Sales<br></p>
+            <p id="small_text">Fear is the reason most salespeople don't like to pick up the phone.Fear is the<br>
+            reason we don't ask for the business more, even though our customers want to buy<br> from us.</p>
+            <img src="selling.jpg" width="250px" height="350px">
+            <br><br>
+                <hr id="body_hr">
+
+            <p id="big_text">I've Got My Eyes on You (B&N Exclusive Edition)<br></p>
+            <p id="small_text">A new thriller from #1 New York Times bestselling author and "Queen of Suspense"<br>
+            Mary Higgins Clark. After a party when her parents are away, eighteen-year-old Kerry<br>Dowling is found
+            fully dressed at the bottom of the family pool. The immediate<br> suspect is her boyfriend who had a bitter argument
+            with her at the party. Then there<br> is a twenty-year-old neighbor who was angry because she didn't invite him to the<br>
+            party.</p>
+            <img src="mary.jpg" width="250px" height="350px">
+            <br><br>
+                <hr id="body_hr">
+            
+            <p>Send your feedback to us</p>
+            <form>
+                <textarea cols="50%" rows="15%" id="area"></textarea>
+                <input type="submit" value="Submit" id="form_button">
+            </form>
+            <br>
+            <hr id="body_hr">
+        </div>
+
+
+        <div id="ads">
+            <p>10% OFF $35+| 15% OFF $60+<br>
+            *USE CODE:HAPPYAPRIL</p><br>
+        </div>
+
+        <div id="footer"> <p id="footer_text"><br>Barnes & Noble Booksellers, Inc., Legal Department<br>
+        122 Fifth Avenue<br> New York, NY 10011<br> Fax: (212) 463-5683</p><br>
+        <p id="footer_text2">Location: <a href="#">Click Map</a></p><br>
+        </div>
+
+    </body>
+</html>
