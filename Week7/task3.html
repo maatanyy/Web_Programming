@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+        <script>
+            function show(){
+                var id = document.getElementById("first").value;
+                var pw = document.getElementById("second").value;
+                document.getElementById("total").value = parseInt(id)+parseInt(pw); //값 받은걸 스트링으로 생각하기 때문
+            }
+        </script>
+    </head>
+
+    <body>
+        <h3>Login</h3>
+        <form>
+            First integer: <input type="text" id="first"/><br/>
+            Second integer: <input type="text" id="second"/><br/>
+            Total: <input type="text" id="total"/><br/>
+            <input type="button" value="Calculate" onclick="show();">
+        </form>
+    </body>
+</html>

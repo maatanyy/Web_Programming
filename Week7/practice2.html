@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <title>Title</title>
+    <script>
+        function show(){
+            var answer = document.getElementsByClassName("list_class")[2].innerHTML;
+            alert(answer);
+        }
+    </script>
+<body>
+    <script>
+        for(var i = 1; i < 6; i++){
+            document.write('<li class="list_class">List item with class ' + i + '</li>');
+        }
+    </script>
+    <input type="button" value="Click" onclick="show();">
+</body>
+</html>

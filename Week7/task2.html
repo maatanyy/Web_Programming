@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Document Object</h1>
+<h2>DOM innerHTML Property</h2>
+<p id="past">JavaScript DOM is fun to learn</p>
+<input type="button" value="Try it" onclick="show();">
+<p id="now"></p>
+
+<script>
+    function show(){
+    var answer = document.getElementById("past").innerHTML;
+    document.getElementById("now").style.color = "green";
+    document.getElementById("now").innerHTML = "<h1>" + answer + "</h1>";
+    }
+</script>
+</body>
+</html>
