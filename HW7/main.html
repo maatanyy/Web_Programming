@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Happy Shopping</title>
+        <style>
+
+                .header{
+                    padding-top:2%;
+                    background : url(photo3.jpg);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    height: 1000px;
+                }
+
+                .header p {
+                    font-size: 25px;
+                    color:white;
+                    font-weight: bold;
+                    display: inline;
+                }
+
+                body {
+                    margin: 0;
+                    padding: 0;
+                   
+                }
+
+                #p1{
+                    margin-left: 7%;
+                }
+                
+                #p2{
+                    font-size: 25px;
+                    color:white;
+                    font-weight: bold;
+                    border:none;
+                    background: none;
+                    margin-left: 58%;
+                }
+
+                ul{
+                    text-align: center;
+                    border-top: 2px dotted red;
+                    border-bottom: 2px dotted red;  
+                    padding: 10px;
+                    font-weight: 600;
+                }
+
+                ul li {
+                    display: inline;
+                    padding: 40px;
+                }
+
+                ul li:hover{
+                    color:Red;
+                }
+
+                ul li a{
+                    text-decoration: none;
+                }
+
+
+                .content{
+                    margin-left:20%;
+                    margin-right:20%;
+                }
+
+                .select{
+                    float: left;
+                    width: 22.3%;
+                    font-size: 15px;
+                    text-align: center;
+                    border: black 2px solid;
+                    margin: 10px;   
+                }
+
+                .select:hover{
+                    border : red 2px solid;
+                }
+
+                .select p {
+                    display: inline;
+                }
+
+                .footer{
+                    margin-left : 20.7%;
+                    margin-right : 20.7%;
+                    clear:both;
+                }
+
+                #finish{
+                    padding-top: 20px;
+                    width: 100%;
+                    height: 50px;
+                    text-align: center;
+                    font-weight: bold;
+                    background-color: aquamarine;
+                }
+                
+                .bt{
+                    position:fixed;
+                    bottom:10%;
+                    right:5%;
+                }
+
+                #bt1:hover, #p2:hover{
+                    color:Red;
+                }
+        </style>
+        <script>
+            var check = new Array(17);
+            var i;
+            for(i=1;i<17;i++){
+                check[i] = 0; 
+            }
+
+            function checked(num){
+                var info = "pic" + num;
+                var photoinfo="fruit" + num +".jpg";
+                if(check[num] == 0){    
+                    var pic = document.getElementById(info).src = "ty.jpg";
+                    check[num]=1;
+                }
+
+                else if (check[num] == 1){
+                    var pic = document.getElementById(info).src = photoinfo;
+                    check[num]=0;
+                }
+            }
+
+            function buy(){
+                var number = check.length;
+                var j;
+                var letter="", price = 0;
+                for(j=1;j<number;j++){
+                    var exlet = "nm" + j;
+                    var won = "price" + j;
+                    if(check[j]==1){
+                        var letter = letter + document.getElementById(exlet).innerHTML + " ";
+                        var pc = parseInt(document.getElementById(won).innerHTML);
+                        var price = price + pc;
+                    }
+                }
+
+                if(letter=="" && price==0){
+                    alert("Please select item!");
+                }
+                else{
+                    var last1 = letter + " is(are) selected!" + "\n\n" + "Total: " + price;
+                    alert(last1);
+                }
+            }
+
+            function gotologin(){
+                location.href ="login.html";
+            }
+
+        </script>
+    </head>
+
+    <body>
+            <div class="header">
+                <p id="p1">Happy Shopping</p>
+                <button id="p2" onclick="gotologin(); return false">Logout</button>
+            </div>
+        
+            <div class="body">
+                <ul>
+                    <li>BEST</li>
+                    <li>FRUIT</li>
+                    <li>VEGETABLE</li>
+                    <li>DAIRY</li>
+                    <li>CLOTH</li>
+                    <li>ELECTRONIC</li>
+                    <li>BOOK</li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <p style="font-size: 20px; font-weight: bold;">BEST FRUIT</p>
+
+                <div class="select" onclick="checked(1)">
+                    <img src="fruit1.jpg" width="100%" height="250px" id="pic1"><br>
+                    <h5 id="nm1">APPLE</h5>
+                    <p id="price1">5</p><p> $</p>
+                </div>
+
+                <div class="select" onclick="checked(2)">
+                    <img src="fruit2.jpg" width="100%" height="250px" id="pic2"><br>
+                    <h5 id="nm2">BANANA</h5>
+                    <p id="price2">6</p><p> $</p>
+                </div>
+
+                <div class="select" onclick="checked(3)">
+                    <img src="fruit3.jpg" width="100%" height="250px" id="pic3"><br>
+                    <h5 id="nm3">ORANGE</h5>
+                    <p id="price3">4</p><p> $</p>
+                </div>
+
+                <div class="select" onclick="checked(4)">
+                    <img src="fruit4.jpg" width="100%" height="250px" id="pic4"><br>
+                    <h5 id="nm4">WATERMELON</h5>
+                    <p id="price4">10</p><p> $</p>
+                </div>
+
+                <div class="select" onclick="checked(5)">
+                    <img src="fruit5.jpg" width="100%" height="250px" id="pic5"><br>
+                    <h5 id="nm5">KIWI</h5>
+                    <p id="price5">5</p><p> $</p>
+                </div>
+
+                <div class="select" onclick="checked(6)">
+                    <img src="fruit6.jpg" width="100%" height="250px" id="pic6"><br>
+                    <h5 id="nm6">BLUEBERRY</h5>
+                    <p id="price6">7</p><p> $</p>
+                </div>
+
+                <div class="select" onclick="checked(7)">
+                    <img src="fruit7.jpg" width="100%" height="250px" id="pic7"><br>
+                    <h5 id="nm7">TEST1</h5>
+                    <p id="price7">2</p><p> $</p>
+                </div>
+
+                <div class="select" onclick="checked(8)">
+                    <img src="fruit8.jpg" width="100%" height="250px" id="pic8"><br>
+                    <h5 id="nm8">TEST2</h5>
+                    <p id="price8">3</p><p> $</p>
+                </div>
+
+                <div class="select" onclick="checked(9)">
+                    <img src="fruit9.jpg" width="100%" height="250px" id="pic9"><br>
+                    <h5 id="nm9">TEST3</h5>
+                    <p id="price9">1</p><p> $</p>
+                </div>
+
+                <div class="select" onclick="checked(10)">
+                    <img src="fruit10.jpg" width="100%" height="250px" id="pic10"><br>
+                    <h5 id="nm10">TEST4</h5>
+                    <p id="price10">10</p><p> $</p>
+                </div>
+
+                <div class="select" onclick="checked(11)">
+                    <img src="fruit11.jpg" width="100%" height="250px" id="pic11"><br>
+                    <h5 id="nm11">TEST5</h5>
+                    <p id="price11">9</p><p> $</p>
+                </div>
+
+                <div class="select" onclick="checked(12)">
+                    <img src="fruit12.jpg" width="100%" height="250px" id="pic12"><br>
+                    <h5 id="nm12">TEST6</h5>
+                    <p id="price12">7</p><p> $</p>
+                </div>
+
+                <div class="select" onclick="checked(13)">
+                    <img src="fruit13.jpg" width="100%" height="250px" id="pic13"><br>
+                    <h5 id="nm13">TEST7</h5>
+                    <p id="price13">3</p><p> $</p>
+                </div>
+
+                <div class="select" onclick="checked(14)">
+                    <img src="fruit14.jpg" width="100%" height="250px" id="pic14"><br>
+                    <h5 id="nm14">TEST8</h5>
+                    <p id="price14">4</p><p> $</p>
+                </div>
+
+                <div class="select" onclick="checked(15)">
+                    <img src="fruit15.jpg" width="100%" height="250px" id="pic15"><br>
+                    <h5 id="nm15">TEST9</h5>
+                    <p id="price15">8</p><p> $</p>
+                </div>
+
+                <div class="select" onclick="checked(16)">
+                    <img src="fruit16.jpg" width="100%" height="250px" id="pic16"><br>
+                    <h5 id="nm16">TEST10</h5>
+                    <p id="price16">7</p><p> $</p>
+                </div>
+
+            </div>
+            <div class="footer">
+                <button id ="bt1" onclick="buy()" style="width: 100%; height: 50px; margin-bottom: 10px; background-color: skyblue; border: none; border-radius: 5px; font-weight: bold;">BUY</button>
+            </div>
+
+            <div id="finish">
+                <span>This is Web Programming Homework</span>
+            </div>
+
+            <div class="bt">
+                <button style="width: 100px; height: 40px; background-color:skyblue; color: red; border: none; border-radius: 3px; font-weight: 400; margin-bottom: 5px;"><a href=#p1 style="text-decoration: none;">TOP</a></button><br>
+                <button style="width: 100px; height: 40px; background-color:skyblue; color: red; border: none; border-radius: 3px; font-weight: 400;"><a href=#finish style="text-decoration: none;">BOTTOM</a></button>
+            </div>
+    </body>
+</html>

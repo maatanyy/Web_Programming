@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Happy Shopping</title>
+        <style>
+
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                background : url(photo2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            .word1 {
+                position: relative;
+                padding-top: 8%;
+                padding-left: 5%;
+                font-size: 45px;
+                font-weight: bold;
+                color:white;
+            }
+            
+            #text1{
+                font-size: 45px;
+                font-weight: bold;
+                color:white;
+                padding-left: 5%;
+            }
+
+            .form1{
+                position: relative;
+                top: -40%;
+                padding-top: 7%;
+                padding-left: 80%;
+            }
+
+            .button {
+                width:170px;
+                height: 40px;
+                background-color: green;
+                border: none;
+                border-radius: 7%;
+            }
+        </style>
+        <script type="text/javascript">
+            function login(){
+                var user_id = document.getElementById("userid").value;
+                var user_pw = document.getElementById("userpw").value;
+                if(user_id == 'admin' && user_pw=="1234"){
+                    alert("Login Success!");
+                    location.href ="main.html";
+                }
+                else{
+                    alert("Login Failed!");
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+            <p class="word1">Happy</p>
+            <p id="text1">Shopping</p>
+
+
+        <form class="form1">
+            ID<br>
+            <input id="userid" type="text" style="height: 25px; margin-top: 2px;" ><br>
+            PW<br>
+            <input id="userpw" type="text" style="height: 25px; margin-top: 2px;"><br> <br>
+            <button class="button" onclick="login(); return false;">Login</button>
+        </form>
+
+    </body>
+</html>
