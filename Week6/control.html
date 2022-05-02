@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Control</title>
+        <script src = "control.js"></script>
+    </head>
+    <body>
+        <script>  
+               document.write("JavaScript Controls" + "<br>")
+               document.write("Numbers to humanize:" + "<br>")
+
+               function choose(text){
+                   var last = text % 10;
+
+                   switch(last){
+                    case 1 : document.write(text + "st" +"<br>"); break;
+                    case 2 : document.write(text + "nd" +"<br>"); break;
+                    case 3 : document.write(text + "rd" +"<br>"); break;
+                    default: document.write(text + "th" +"<br>"); break;
+                   } 
+               }
+
+               choose(115); 
+               choose(111);
+               choose(113);
+               choose(22);
+               
+
+        </script>
+    </body>
+</html>
+
+
+
+         

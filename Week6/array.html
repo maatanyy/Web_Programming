@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array</title>
+        <script>  
+               var arr = new Array();
+               var i=0;
+               function stack(){
+                    arr[i] = document.getElementById("number").value;
+                    i++;
+               }
+
+               function show(){
+                    var j=0;
+                    for(j;j<arr.length;j++){
+                        document.write(arr[j] +"<br>")
+                    }
+               }
+        </script>
+    </head>
+    <body>
+            Input : <input id="number" />
+        <button type="button" onclick="stack()">Stack</button>
+        <br>
+        <button type="button" onclick="show()">Show</button>
+    </body>
+</html>
+
+
+
+
+         

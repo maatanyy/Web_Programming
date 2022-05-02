@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Replace</title>
+        <script src = "replace.js"></script>
+    </head>
+    <body>
+        <script>
+            document.write("JavaScript String" + "<br>")
+
+            document.write("Original String:" + "<br>")
+            
+            var text = "best";
+
+            document.write(text + "<br>")
+            
+            document.write("Replaced String:" + "<br>")
+            
+            function replace(text){
+                var ch = text[0];
+                var newtext = text.replace(ch,"t");
+                document.write(newtext + "<br>")
+                return newtext;
+            }
+            
+            replace("text");
+            replace("divide");
+
+        </script>
+    </body>
+</html>

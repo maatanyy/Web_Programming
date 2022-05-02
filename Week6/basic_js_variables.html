@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables of JavaScript</title>
+    </head>
+
+    <body>
+        <script>
+            document.write("JavaScript function"+ "<br>")
+            
+        function square(num) {
+        var Number = num * num;
+        document.write('The result of squaring the number ' + num + ' is ' + Number + "<br>");
+        return Number;
+        }
+
+        square(3);
+
+        function half(num) {
+        var Number = num / 2;
+        document.write('Half of ' + num + ' is ' + Number + "<br>");
+        return Number;
+        }
+
+        half(5);
+
+        function percent(num1,num2) {
+        var percent = (num1/num2)*100;
+        document.write(num1 + ' is ' + percent + '% of ' + num2 + "<br>");
+        return percent;
+        }
+
+        percent(5,10);
+
+        square(2);
+
+        function pi(num) {
+        var answer = num * num * Math.PI
+        document.write('The area of circle with radius ' + num + ' is ' + answer + "<br>");
+        return answer;
+        }
+
+        pi(2);
+
+        </script>
+    </body>
+</html>
+
