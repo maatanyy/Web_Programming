@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<div id="map" style="width:1200px; height: 500px"></div>
+
+<script>
+function myMap() {  
+  
+  var mapCanvas = document.getElementById("map");
+  var myCenter = new google.maps.LatLng(36.6283, 127.4583);
+
+  var mapOptions = {
+  	center: myCenter, 
+    zoom: 7
+  };
+
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+
+  var population = [9.7, 3.4, 2.4, 1.5, 1.5];
+
+  var markers = [
+    new google.maps.LatLng(37.5666791, 126.9782914),
+    new google.maps.LatLng(35.1799528, 129.0752365),
+    new google.maps.LatLng(35.8713, 128.6018),
+    new google.maps.LatLng(36.3496, 127.3848),
+    new google.maps.LatLng(35.1594647, 126.8515034),
+  ];
+
+  var weather = [
+      ['Seoul', 17, 'rainy.png'],
+      ['Busan', 18, 'sunny.png'],
+      ['Daegu', 21, 'cloudy.png'],
+      ['Daejon', 22, 'cloudy.png'],
+      ['Gwangju', 21, 'rainy.png']
+    ];
+
+  var heatMapData = [
+    new google.maps.LatLng(8.8678, 76.5623),
+    new google.maps.LatLng(9.5674, 77.5623),
+    new google.maps.LatLng(10.7821, 78.447),
+    new google.maps.LatLng(12.4523, 79.443),
+  ];
+
+  var heatmap = new google.maps.visualization.HeatmapLayer({
+  data: heatMapData,
+  radius: 25
+});
+
+heatmap.setMap(map);
+
+
+
+  var marker,i;
+
+  for(i=0;i<markers.length;i++){
+    marker = new google.maps.Marker({
+		position: markers[i],
+		map: map
+	  });
+
+    var myUniversity = new google.maps.Circle({
+    center : markers[i],
+    radius: population[i]*10000,
+    strokeColor: "#FF5733",
+    strokeOpacity: 0.5,
+    strokeWeight: 3,
+    fillColor: "#FF5733",
+    fillOpacity: 0.5
+  });
+
+  myUniversity.setMap(map);
+
+  } 
+
+}
+  
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1iurcocVPVkrR8XrZG8YSEs9-4U1qimg&libraries=visualization&callback=myMap">
+</script>
+
+
+</body>
+</html>
